@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([800609.870500, 6662918.596283, 806709.565000, 6667083.108517], map.getSize());
+map.getView().fit([801620.589431, 6664108.998579, 802663.480644, 6664821.023291], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -457,7 +457,7 @@ var Abstract = new ol.control.Control({
 
         var linkElement = document.createElement('a');
 
-        if (227 > 240) {
+        if (338 > 240) {
             linkElement.setAttribute("onmouseenter", "showAbstract()");
             linkElement.setAttribute("onmouseleave", "hideAbstract()");
             linkElement.innerHTML = 'i';
@@ -471,13 +471,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = '<h4>Kompensationsmaßnahmen auf dem Scharpenacken</h4><br />Klick auf die jeweiligen Flächen gibt weitere Infos zu den jeweiligen Maßnahmen (PDF, JPG)<br />Die Suche (Fernglas) erlaubt die Suche nach Maßnahmen-Nummern (z. B. 07 oder 01a).';
+                linkElement.innerHTML = '<b>Kompensationsmaßnahmen auf dem Scharpenacken</b><br /><p><br />Klick auf die jeweiligen Flächen gibt weitere Infos zu den jeweiligen Maßnahmen (PDF, JPG)<br /><p><br />Die Suche (Fernglas) erlaubt die Suche nach Maßnahmen-Nummern (z. B. 07 oder 01a).<br /><p><br />Vollständige Liste aller Maßnahmen <a href="pdf/Kompensation-Scharpenacken" target="_blank">PDF</a><br />';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = '<h4>Kompensationsmaßnahmen auf dem Scharpenacken</h4><br />Klick auf die jeweiligen Flächen gibt weitere Infos zu den jeweiligen Maßnahmen (PDF, JPG)<br />Die Suche (Fernglas) erlaubt die Suche nach Maßnahmen-Nummern (z. B. 07 oder 01a).';
+            linkElement.innerHTML = '<b>Kompensationsmaßnahmen auf dem Scharpenacken</b><br /><p><br />Klick auf die jeweiligen Flächen gibt weitere Infos zu den jeweiligen Maßnahmen (PDF, JPG)<br /><p><br />Die Suche (Fernglas) erlaubt die Suche nach Maßnahmen-Nummern (z. B. 07 oder 01a).<br /><p><br />Vollständige Liste aller Maßnahmen <a href="pdf/Kompensation-Scharpenacken" target="_blank">PDF</a><br />';
         }
 
         titleElement.appendChild(linkElement);
