@@ -457,7 +457,7 @@ var Abstract = new ol.control.Control({
 
         var linkElement = document.createElement('a');
 
-        if (338 > 240) {
+        if (342 > 240) {
             linkElement.setAttribute("onmouseenter", "showAbstract()");
             linkElement.setAttribute("onmouseleave", "hideAbstract()");
             linkElement.innerHTML = 'i';
@@ -471,13 +471,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = '<b>Kompensationsmaßnahmen auf dem Scharpenacken</b><br /><p><br />Klick auf die jeweiligen Flächen gibt weitere Infos zu den jeweiligen Maßnahmen (PDF, JPG)<br /><p><br />Die Suche (Fernglas) erlaubt die Suche nach Maßnahmen-Nummern (z. B. 07 oder 01a).<br /><p><br />Vollständige Liste aller Maßnahmen <a href="pdf/Kompensation-Scharpenacken" target="_blank">PDF</a><br />';
+                linkElement.innerHTML = '<b>Kompensationsmaßnahmen auf dem Scharpenacken</b><br /><p><br />Klick auf die jeweiligen Flächen gibt weitere Infos zu den jeweiligen Maßnahmen (PDF, JPG)<br /><p><br />Die Suche (Fernglas) erlaubt die Suche nach Maßnahmen-Nummern (z. B. 07 oder 01a).<br /><p><br />Vollständige Liste aller Maßnahmen <a href="pdf/Kompensation-Scharpenacken.pdf" target="_blank">PDF</a><br />';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = '<b>Kompensationsmaßnahmen auf dem Scharpenacken</b><br /><p><br />Klick auf die jeweiligen Flächen gibt weitere Infos zu den jeweiligen Maßnahmen (PDF, JPG)<br /><p><br />Die Suche (Fernglas) erlaubt die Suche nach Maßnahmen-Nummern (z. B. 07 oder 01a).<br /><p><br />Vollständige Liste aller Maßnahmen <a href="pdf/Kompensation-Scharpenacken" target="_blank">PDF</a><br />';
+            linkElement.innerHTML = '<b>Kompensationsmaßnahmen auf dem Scharpenacken</b><br /><p><br />Klick auf die jeweiligen Flächen gibt weitere Infos zu den jeweiligen Maßnahmen (PDF, JPG)<br /><p><br />Die Suche (Fernglas) erlaubt die Suche nach Maßnahmen-Nummern (z. B. 07 oder 01a).<br /><p><br />Vollständige Liste aller Maßnahmen <a href="pdf/Kompensation-Scharpenacken.pdf" target="_blank">PDF</a><br />';
         }
 
         titleElement.appendChild(linkElement);
