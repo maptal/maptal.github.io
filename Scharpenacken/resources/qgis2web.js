@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([800695.018520, 6662918.596283, 806794.713020, 6667083.108517], map.getSize());
+map.getView().fit([800609.870500, 6662934.826844, 806709.565000, 6667066.877956], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -457,7 +457,7 @@ var Abstract = new ol.control.Control({
 
         var linkElement = document.createElement('a');
 
-        if (461 > 240) {
+        if (599 > 240) {
             linkElement.setAttribute("onmouseenter", "showAbstract()");
             linkElement.setAttribute("onmouseleave", "hideAbstract()");
             linkElement.innerHTML = 'i';
@@ -471,13 +471,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = '<b>Kompensationsmaßnahmen auf dem Scharpenacken</b><br /><p><br />Klick auf die jeweiligen Flächen gibt weitere Infos zu den jeweiligen Maßnahmen (PDF, JPG)<br /><p><br />Die Suche (Fernglas) erlaubt die Suche nach Maßnahmen-Nummern (z. B. 07 oder 01a).<br /><p><br />Vollständige Liste aller Maßnahmen <a href="pdf/Kompensation-Scharpenacken.pdf" target="_blank">PDF</a><br /><p><br />(c) <a href="http://menschenfreunde-scharpenacken.de" target="_blank">Menschen- und Natutfreunde Scharpenacken</a><br />';
+                linkElement.innerHTML = '<b>Kompensationsmaßnahmen auf dem Scharpenacken</b><br /><p><br />Klick auf die jeweiligen Flächen gibt weitere Infos zu den jeweiligen Maßnahmen (PDF, JPG)<br /><p><br />Die Suche (Fernglas) erlaubt die Suche nach Maßnahmen-Nummern (z. B. 07 oder 01a).<br /><p><br />Vollständige Liste aller Maßnahmen <a href="pdf/Kompensation-Scharpenacken.pdf" target="_blank">PDF</a><br /><p><br /><b>Tipp:</b> Die Legenden der georeferenzierten PDFs lassen sich mit abgeschalteter Basiskarte gut lesen<br /><p><br />Letztes Update: 19.11.24<br /><p><br />(c) <a href="http://menschenfreunde-scharpenacken.de" target="_blank">Menschen- und Natutfreunde Scharpenacken</a><br />';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = '<b>Kompensationsmaßnahmen auf dem Scharpenacken</b><br /><p><br />Klick auf die jeweiligen Flächen gibt weitere Infos zu den jeweiligen Maßnahmen (PDF, JPG)<br /><p><br />Die Suche (Fernglas) erlaubt die Suche nach Maßnahmen-Nummern (z. B. 07 oder 01a).<br /><p><br />Vollständige Liste aller Maßnahmen <a href="pdf/Kompensation-Scharpenacken.pdf" target="_blank">PDF</a><br /><p><br />(c) <a href="http://menschenfreunde-scharpenacken.de" target="_blank">Menschen- und Natutfreunde Scharpenacken</a><br />';
+            linkElement.innerHTML = '<b>Kompensationsmaßnahmen auf dem Scharpenacken</b><br /><p><br />Klick auf die jeweiligen Flächen gibt weitere Infos zu den jeweiligen Maßnahmen (PDF, JPG)<br /><p><br />Die Suche (Fernglas) erlaubt die Suche nach Maßnahmen-Nummern (z. B. 07 oder 01a).<br /><p><br />Vollständige Liste aller Maßnahmen <a href="pdf/Kompensation-Scharpenacken.pdf" target="_blank">PDF</a><br /><p><br /><b>Tipp:</b> Die Legenden der georeferenzierten PDFs lassen sich mit abgeschalteter Basiskarte gut lesen<br /><p><br />Letztes Update: 19.11.24<br /><p><br />(c) <a href="http://menschenfreunde-scharpenacken.de" target="_blank">Menschen- und Natutfreunde Scharpenacken</a><br />';
         }
 
         titleElement.appendChild(linkElement);
@@ -953,17 +953,6 @@ if (elementToMove && parentElement) {
 
 //layer search
 
-var searchLayer = new SearchLayer({
-    layer: lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_27,
-    colName: 'massnahme',
-    zoom: 10,
-    collapsed: true,
-    map: map
-});
-map.addControl(searchLayer);
-document.getElementsByClassName('search-layer')[0].getElementsByTagName('button')[0].className += ' fa fa-binoculars';
-document.getElementsByClassName('search-layer-input-search')[0].placeholder = 'Search feature ...';
-    
 
 //scalebar
 

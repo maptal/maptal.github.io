@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:3857").setExtent([800695.018520, 6662918.596283, 806794.713020, 6667083.108517]);
+//ol.proj.get("EPSG:3857").setExtent([800609.870500, 6662934.826844, 806709.565000, 6667066.877956]);
 var wms_layers = [];
 
 
@@ -356,70 +356,96 @@ var lyr_FFHGebiete_23 = new ol.layer.Tile({
                             
                           });
               wms_layers.push([lyr_FFHGebiete_23, 1]);
-var lyr_FlcheohneBPlan_24 = new ol.layer.Image({
+var lyr_FlchedesScharpenackenPDF_24 = new ol.layer.Image({
                             opacity: 1,
-                            title: "Fläche - ohne BPlan",
+                            title: "Fläche des Scharpenacken (PDF)",
                             
                             
                             source: new ol.source.ImageStatic({
-                               url: "./layers/FlcheohneBPlan_24.png",
+                               url: "./layers/FlchedesScharpenackenPDF_24.png",
     attributions: ' ',
                                 projection: 'EPSG:3857',
                                 alwaysInRange: true,
                                 imageExtent: [800776.638728, 6663031.157144, 804499.379979, 6666910.828940]
                             })
                         });
-var lyr_ExterneManahmenLandschaftspflegerischerFachbeitrag_25 = new ol.layer.Image({
+var lyr_LandschaftspflManimGeltungsbereichPDF_25 = new ol.layer.Image({
                             opacity: 1,
-                            title: "Externe Maßnahmen - Landschaftspflegerischer Fachbeitrag",
+                            title: "Landschaftspfl. Maßn. im Geltungsbereich (PDF)",
                             
                             
                             source: new ol.source.ImageStatic({
-                               url: "./layers/ExterneManahmenLandschaftspflegerischerFachbeitrag_25.png",
+                               url: "./layers/LandschaftspflManimGeltungsbereichPDF_25.png",
     attributions: ' ',
                                 projection: 'EPSG:3857',
                                 alwaysInRange: true,
-                                imageExtent: [801012.956287, 6663001.569730, 806475.277543, 6666840.019280]
+                                imageExtent: [802055.483892, 6662942.661777, 804904.680584, 6664942.170112]
                             })
                         });
-var lyr_MassnahmenBPlan1115V_26 = new ol.layer.Image({
+var lyr_LandschaftspflegerischeMassnahmenPDF_26 = new ol.layer.Image({
                             opacity: 1,
-                            title: "Massnahmen BPlan 1115V",
+                            title: "Landschaftspflegerische Massnahmen (PDF)",
                             
                             
                             source: new ol.source.ImageStatic({
-                               url: "./layers/MassnahmenBPlan1115V_26.png",
+                               url: "./layers/LandschaftspflegerischeMassnahmenPDF_26.png",
     attributions: ' ',
                                 projection: 'EPSG:3857',
                                 alwaysInRange: true,
                                 imageExtent: [801708.457200, 6664128.408200, 804238.090900, 6666441.987800]
                             })
                         });
-var format_KompensationflchenScharpenackeninkMassnahmebtterPDF_27 = new ol.format.GeoJSON();
-var features_KompensationflchenScharpenackeninkMassnahmebtterPDF_27 = format_KompensationflchenScharpenackeninkMassnahmebtterPDF_27.readFeatures(json_KompensationflchenScharpenackeninkMassnahmebtterPDF_27, 
+var lyr_BiotoptypenuFunktionselementeimGesamtraumPDF_27 = new ol.layer.Image({
+                            opacity: 1,
+                            title: "Biotoptypen u. Funktionselemente im Gesamtraum (PDF)",
+                            
+                            
+                            source: new ol.source.ImageStatic({
+                               url: "./layers/BiotoptypenuFunktionselementeimGesamtraumPDF_27.png",
+    attributions: ' ',
+                                projection: 'EPSG:3857',
+                                alwaysInRange: true,
+                                imageExtent: [800852.602869, 6662843.316178, 807891.311568, 6667136.234221]
+                            })
+                        });
+var lyr_ExterneManahmenLandschaftspflFachbeitragPDF_28 = new ol.layer.Image({
+                            opacity: 1,
+                            title: "Externe Maßnahmen - Landschaftspfl. Fachbeitrag (PDF)",
+                            
+                            
+                            source: new ol.source.ImageStatic({
+                               url: "./layers/ExterneManahmenLandschaftspflFachbeitragPDF_28.png",
+    attributions: ' ',
+                                projection: 'EPSG:3857',
+                                alwaysInRange: true,
+                                imageExtent: [801012.956287, 6663001.569730, 806475.277543, 6666840.019280]
+                            })
+                        });
+var format_KompensationflchenScharpenackeninkMassnahmebtterPDF_29 = new ol.format.GeoJSON();
+var features_KompensationflchenScharpenackeninkMassnahmebtterPDF_29 = format_KompensationflchenScharpenackeninkMassnahmebtterPDF_29.readFeatures(json_KompensationflchenScharpenackeninkMassnahmebtterPDF_29, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_KompensationflchenScharpenackeninkMassnahmebtterPDF_27 = new ol.source.Vector({
+var jsonSource_KompensationflchenScharpenackeninkMassnahmebtterPDF_29 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_KompensationflchenScharpenackeninkMassnahmebtterPDF_27.addFeatures(features_KompensationflchenScharpenackeninkMassnahmebtterPDF_27);
-var lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_27 = new ol.layer.Vector({
+jsonSource_KompensationflchenScharpenackeninkMassnahmebtterPDF_29.addFeatures(features_KompensationflchenScharpenackeninkMassnahmebtterPDF_29);
+var lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_29 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_KompensationflchenScharpenackeninkMassnahmebtterPDF_27, 
-                style: style_KompensationflchenScharpenackeninkMassnahmebtterPDF_27,
+                source:jsonSource_KompensationflchenScharpenackeninkMassnahmebtterPDF_29, 
+                style: style_KompensationflchenScharpenackeninkMassnahmebtterPDF_29,
                 popuplayertitle: "Kompensationflächen Scharpenacken ink. Massnahmebätter (PDF)",
                 interactive: true,
     title: 'Kompensationflächen Scharpenacken ink. Massnahmebätter (PDF)<br />\
-    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_27_0.png" /> 17 - 18<br />\
-    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_27_1.png" /> 18 - 19<br />\
-    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_27_2.png" /> 19 - 20<br />\
-    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_27_3.png" /> 20 - 21<br />\
-    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_27_4.png" /> 21 - 22<br />\
-    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_27_5.png" /> 22 - 23<br />\
-    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_27_6.png" /> 23 - 24<br />\
-    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_27_7.png" /> 24 - 25<br />'
+    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_29_0.png" /> 17 - 18<br />\
+    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_29_1.png" /> 18 - 19<br />\
+    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_29_2.png" /> 19 - 20<br />\
+    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_29_3.png" /> 20 - 21<br />\
+    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_29_4.png" /> 21 - 22<br />\
+    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_29_5.png" /> 22 - 23<br />\
+    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_29_6.png" /> 23 - 24<br />\
+    <img src="styles/legend/KompensationflchenScharpenackeninkMassnahmebtterPDF_29_7.png" /> 24 - 25<br />'
         });
 var group_LandschaftspflegerischerBegleitplanScharpenacken = new ol.layer.Group({
-                                layers: [lyr_FlcheohneBPlan_24,lyr_ExterneManahmenLandschaftspflegerischerFachbeitrag_25,lyr_MassnahmenBPlan1115V_26,lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_27,],
+                                layers: [lyr_FlchedesScharpenackenPDF_24,lyr_LandschaftspflManimGeltungsbereichPDF_25,lyr_LandschaftspflegerischeMassnahmenPDF_26,lyr_BiotoptypenuFunktionselementeimGesamtraumPDF_27,lyr_ExterneManahmenLandschaftspflFachbeitragPDF_28,lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_29,],
                                 fold: "open",
                                 title: "Landschaftspflegerischer Begleitplan Scharpenacken"});
 var group_LandschaftsinformationssystemLINFOS = new ol.layer.Group({
@@ -443,17 +469,17 @@ var group_Basiskarten = new ol.layer.Group({
                                 fold: "open",
                                 title: "Basiskarten"});
 
-lyr_OSM_0.setVisible(true);lyr_Gmaps_1.setVisible(false);lyr_LPlanWestFestsetzungskarte_2.setVisible(false);lyr_LPlanWestEntwicklungskarte_3.setVisible(false);lyr_LPlanOstFestsetzungskarte_4.setVisible(false);lyr_LPlanOstEntwicklungskarte_5.setVisible(false);lyr_LPlanNordFestsetzungskarte_6.setVisible(false);lyr_LPlanNordEntwicklungskarte_7.setVisible(false);lyr_LPlanGelpeFestsetzungskarte_8.setVisible(false);lyr_LPlanGelpeEntwicklungskarte_9.setVisible(false);lyr_LandschaftsundNaturschutz_10.setVisible(false);lyr_Festsetzungstexte_11.setVisible(false);lyr_VerffentlichteKompensationsflchen_12.setVisible(false);lyr_FlchenanGrnanlagen_13.setVisible(false);lyr_FlchenimEigentumderStadtWuppertalAusschnitt_14.setVisible(false);lyr_LebensraumtypenrundScharpenacken_15.setVisible(false);lyr_Biotopkataster_16.setVisible(false);lyr_Biotoptypen_17.setVisible(false);lyr_Landschaftsschutzgebiete_18.setVisible(false);lyr_Naturschutzgebiete_19.setVisible(false);lyr_BereichefrdenSchutzderNatur_20.setVisible(false);lyr_VerbundflchenherausragendebesondereBedeutung_21.setVisible(false);lyr_3042Biotope_22.setVisible(false);lyr_FFHGebiete_23.setVisible(false);lyr_FlcheohneBPlan_24.setVisible(false);lyr_ExterneManahmenLandschaftspflegerischerFachbeitrag_25.setVisible(true);lyr_MassnahmenBPlan1115V_26.setVisible(false);lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_27.setVisible(true);
+lyr_OSM_0.setVisible(true);lyr_Gmaps_1.setVisible(false);lyr_LPlanWestFestsetzungskarte_2.setVisible(false);lyr_LPlanWestEntwicklungskarte_3.setVisible(false);lyr_LPlanOstFestsetzungskarte_4.setVisible(false);lyr_LPlanOstEntwicklungskarte_5.setVisible(false);lyr_LPlanNordFestsetzungskarte_6.setVisible(false);lyr_LPlanNordEntwicklungskarte_7.setVisible(false);lyr_LPlanGelpeFestsetzungskarte_8.setVisible(false);lyr_LPlanGelpeEntwicklungskarte_9.setVisible(false);lyr_LandschaftsundNaturschutz_10.setVisible(false);lyr_Festsetzungstexte_11.setVisible(false);lyr_VerffentlichteKompensationsflchen_12.setVisible(false);lyr_FlchenanGrnanlagen_13.setVisible(false);lyr_FlchenimEigentumderStadtWuppertalAusschnitt_14.setVisible(false);lyr_LebensraumtypenrundScharpenacken_15.setVisible(false);lyr_Biotopkataster_16.setVisible(false);lyr_Biotoptypen_17.setVisible(false);lyr_Landschaftsschutzgebiete_18.setVisible(false);lyr_Naturschutzgebiete_19.setVisible(false);lyr_BereichefrdenSchutzderNatur_20.setVisible(false);lyr_VerbundflchenherausragendebesondereBedeutung_21.setVisible(false);lyr_3042Biotope_22.setVisible(false);lyr_FFHGebiete_23.setVisible(false);lyr_FlchedesScharpenackenPDF_24.setVisible(false);lyr_LandschaftspflManimGeltungsbereichPDF_25.setVisible(false);lyr_LandschaftspflegerischeMassnahmenPDF_26.setVisible(false);lyr_BiotoptypenuFunktionselementeimGesamtraumPDF_27.setVisible(false);lyr_ExterneManahmenLandschaftspflFachbeitragPDF_28.setVisible(true);lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_29.setVisible(true);
 var layersList = [group_Basiskarten,group_Landschaftsplnerechtsverbindlich,group_WuppertalWMSDienste,group_Wuppertal,group_LandschaftsinformationssystemLINFOS,group_LandschaftspflegerischerBegleitplanScharpenacken];
 lyr_FlchenimEigentumderStadtWuppertalAusschnitt_14.set('fieldAliases', {'fid': 'fid', 'GEM': 'GEM', 'FLUR': 'FLUR', 'FLURSTZ': 'FLURSTZ', 'FLURSTN': 'FLURSTN', });
 lyr_LebensraumtypenrundScharpenacken_15.set('fieldAliases', {'fid': 'fid', 'LOCALID': 'LOCALID', 'DOMAINOBJE': 'DOMAINOBJE', 'LRT_CODE_G': 'LRT_CODE_G', 'LINK': 'LINK', });
-lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_27.set('fieldAliases', {'id': 'id', 'name': 'Name', 'flaeche': 'flaeche', 'bezeichnun': 'Bezeichnung', 'ziel1': 'Ziel', 'ziel2': 'ziel2', 'zielbio': 'zielbio', 'massnahme': 'Massnahme', 'ur_wert': 'Ausg. Biotopwert', 'ziel_wert': 'Ziel Biotopwert', 'ur_typ': 'Ausg. Biotoptyp', 'ziel_typ': 'Ziel Biotoptyp', 'hektar': 'Fläche (ha)', 'pdf': 'vollst. Beschreibung', 'image': 'Beschreibung als Bild', });
+lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_29.set('fieldAliases', {'id': 'id', 'name': 'Name', 'flaeche': 'flaeche', 'bezeichnun': 'Bezeichnung', 'ziel1': 'Ziel', 'ziel2': 'ziel2', 'zielbio': 'zielbio', 'massnahme': 'Massnahme', 'ur_wert': 'Ausg. Biotopwert', 'ziel_wert': 'Ziel Biotopwert', 'ur_typ': 'Ausg. Biotoptyp', 'ziel_typ': 'Ziel Biotoptyp', 'hektar': 'Fläche (ha)', 'pdf': 'vollst. Beschreibung', 'image': 'Beschreibung als Bild', });
 lyr_FlchenimEigentumderStadtWuppertalAusschnitt_14.set('fieldImages', {'fid': '', 'GEM': '', 'FLUR': '', 'FLURSTZ': '', 'FLURSTN': '', });
 lyr_LebensraumtypenrundScharpenacken_15.set('fieldImages', {'fid': '', 'LOCALID': '', 'DOMAINOBJE': '', 'LRT_CODE_G': '', 'LINK': '', });
-lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_27.set('fieldImages', {'id': 'Range', 'name': 'TextEdit', 'flaeche': 'TextEdit', 'bezeichnun': 'TextEdit', 'ziel1': 'TextEdit', 'ziel2': 'TextEdit', 'zielbio': 'TextEdit', 'massnahme': 'TextEdit', 'ur_wert': 'Range', 'ziel_wert': 'Range', 'ur_typ': 'TextEdit', 'ziel_typ': 'TextEdit', 'hektar': 'TextEdit', 'pdf': 'TextEdit', 'image': 'TextEdit', });
+lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_29.set('fieldImages', {'id': 'Range', 'name': 'TextEdit', 'flaeche': 'TextEdit', 'bezeichnun': 'TextEdit', 'ziel1': 'TextEdit', 'ziel2': 'TextEdit', 'zielbio': 'TextEdit', 'massnahme': 'TextEdit', 'ur_wert': 'Range', 'ziel_wert': 'Range', 'ur_typ': 'TextEdit', 'ziel_typ': 'TextEdit', 'hektar': 'TextEdit', 'pdf': 'TextEdit', 'image': 'TextEdit', });
 lyr_FlchenimEigentumderStadtWuppertalAusschnitt_14.set('fieldLabels', {'fid': 'header label - visible with data', 'GEM': 'header label - visible with data', 'FLUR': 'header label - visible with data', 'FLURSTZ': 'header label - visible with data', 'FLURSTN': 'header label - visible with data', });
 lyr_LebensraumtypenrundScharpenacken_15.set('fieldLabels', {'fid': 'header label - visible with data', 'LOCALID': 'header label - visible with data', 'DOMAINOBJE': 'header label - visible with data', 'LRT_CODE_G': 'header label - visible with data', 'LINK': 'header label - visible with data', });
-lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_27.set('fieldLabels', {'id': 'hidden field', 'name': 'header label - visible with data', 'flaeche': 'hidden field', 'bezeichnun': 'header label - visible with data', 'ziel1': 'header label - visible with data', 'ziel2': 'header label - visible with data', 'zielbio': 'hidden field', 'massnahme': 'inline label - visible with data', 'ur_wert': 'inline label - visible with data', 'ziel_wert': 'inline label - visible with data', 'ur_typ': 'inline label - visible with data', 'ziel_typ': 'inline label - visible with data', 'hektar': 'header label - always visible', 'pdf': 'header label - visible with data', 'image': 'no label', });
-lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_27.on('precompose', function(evt) {
+lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_29.set('fieldLabels', {'id': 'hidden field', 'name': 'header label - visible with data', 'flaeche': 'hidden field', 'bezeichnun': 'header label - visible with data', 'ziel1': 'header label - visible with data', 'ziel2': 'header label - visible with data', 'zielbio': 'hidden field', 'massnahme': 'inline label - visible with data', 'ur_wert': 'inline label - visible with data', 'ziel_wert': 'inline label - visible with data', 'ur_typ': 'inline label - visible with data', 'ziel_typ': 'inline label - visible with data', 'hektar': 'header label - always visible', 'pdf': 'header label - visible with data', 'image': 'no label', });
+lyr_KompensationflchenScharpenackeninkMassnahmebtterPDF_29.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
