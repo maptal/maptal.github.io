@@ -1,3 +1,5 @@
+![Maptal](/docs/Maptal.webp)
+
 # Willkommen auf Maptal, dem Wuppertaler Kartendienst
 
 ## Karten
