@@ -2,7 +2,7 @@
 
 # Willkommen auf Maptal, dem Wuppertaler Kartendienst
 
-## Karten
+## Unsere bisherigen Karten
 
 | Karte | Link |Beschreibung|
 |-----|---------------|---|
