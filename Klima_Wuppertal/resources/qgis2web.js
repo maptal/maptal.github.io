@@ -465,13 +465,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = '<img style="max-width: 200%; max-height: 200%;" src="styles/legend/Legende.png" />';
+                linkElement.innerHTML = '<img style="max-width: 100%; max-height: 100%;" src="styles/legend/Legende.png" />';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = '<img style="max-width: 200%; max-height: 200%;" src="styles/legend/Legende.png" />';
+            linkElement.innerHTML = '<img style="max-width: 100%; max-height: 100%;" src="styles/legend/Legende.png" />';
         }
 
         titleElement.appendChild(linkElement);
