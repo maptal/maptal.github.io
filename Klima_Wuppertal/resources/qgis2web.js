@@ -451,7 +451,7 @@ var Abstract = new ol.control.Control({
 
         var linkElement = document.createElement('a');
 
-        if (41 > 240) {
+        if (241 > 240) {
             linkElement.setAttribute("onmouseenter", "showAbstract()");
             linkElement.setAttribute("onmouseleave", "hideAbstract()");
             linkElement.innerHTML = 'i';
@@ -465,13 +465,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = '<img style="max-width: 100%; max-height: 100%;" src="styles/legend/Legende.png" />';
+                linkElement.innerHTML = '<img style="max-width: 150%; max-height: 150%;" src="styles/legend/Legende.png" />';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = '<img style="max-width: 100%; max-height: 100%;" src="styles/legend/Legende.png" />';
+            linkElement.innerHTML = '<img style="max-width: 150%; max-height: 150%;" src="styles/legend/Legende.png" />';
         }
 
         titleElement.appendChild(linkElement);
