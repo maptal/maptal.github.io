@@ -40,7 +40,7 @@ var lyr_TypC_2 = new ol.layer.Vector({
                 style: style_TypC_2,
                 popuplayertitle: 'Typ C',
                 interactive: false,
-                title: '<img src="styles/legend/TypC_2.png" /> Typ C'
+                title: '<img src="styles/legend/TypC_2.png" /> Typ C <br>Überdurchschnittlich hohe Bevölkerungsdichte<br>im Bereich der Hitzeinsel: <b>(über 15.000 EW/km2)</b>'
             });
 var format_TypB_3 = new ol.format.GeoJSON();
 var features_TypB_3 = format_TypB_3.readFeatures(json_TypB_3, 
@@ -55,7 +55,7 @@ var lyr_TypB_3 = new ol.layer.Vector({
                 style: style_TypB_3,
                 popuplayertitle: 'Typ B',
                 interactive: false,
-                title: '<img src="styles/legend/TypB_3.png" /> Typ B'
+                title: '<img src="styles/legend/TypB_3.png" /> Typ B <br>Durchschnittlich bis hohe Bevölkerungsdichte<br>im Bereich der Hitzeinsel: <b>( bis 15.000 EW/km2</b>'
             });
 var format_TypA_4 = new ol.format.GeoJSON();
 var features_TypA_4 = format_TypA_4.readFeatures(json_TypA_4, 
@@ -70,7 +70,7 @@ var lyr_TypA_4 = new ol.layer.Vector({
                 style: style_TypA_4,
                 popuplayertitle: 'Typ A',
                 interactive: false,
-                title: '<img src="styles/legend/TypA_4.png" /> Typ A'
+                title: '<img src="styles/legend/TypA_4.png" /> Typ A <br>Geringe bis durchschnittliche Bevölkerungsdichte<br>im Bereich der Hitzeinsel: <b>(bis 6.000 EW/km2</b>'
             });
 var lyr_Klimafunktionskarte_5 = new ol.layer.Tile({
                             source: new ol.source.TileWMS(({
@@ -190,7 +190,7 @@ var lyr_Zone1_12 = new ol.layer.Vector({
                 style: style_Zone1_12,
                 popuplayertitle: 'Zone 1',
                 interactive: false,
-                title: '<img src="styles/legend/Zone1_12.png" /> Zone 1'
+                title: '<img src="styles/legend/Zone1_12.png" /> Zone 1 <br><b>Gebiete mit Hitzebel. & einer geringen<br>bis durchschnittlichen Bevölkerungsdichte</b><br><b><u>Zielvorgaben:</u></b><ul><li><b>* </b>Beschattung durch Vegetation und Bauelemente<br>(z, B. Pergola, Arkaden, Sonnensegel)</li><li><b>* </b>Kühleffekte der Verdunstung nutzen<br>(offene & bewegte Wasserflächen, Begrünung)</li><li><b>* </b>Helle Farben für Oberflächen & Hausfassaden<br>zur Reduktion der Hitzeaufnahme der Materialien</li><li><b>* </b>Entsiegelung von Flächen<br>(z. B. Straßenbankette, Mittelstreifen, Innenhöfe)</li></ul>'
             });
 var format_Zone2_13 = new ol.format.GeoJSON();
 var features_Zone2_13 = format_Zone2_13.readFeatures(json_Zone2_13, 
@@ -205,7 +205,7 @@ var lyr_Zone2_13 = new ol.layer.Vector({
                 style: style_Zone2_13,
                 popuplayertitle: 'Zone 2',
                 interactive: false,
-                title: '<img src="styles/legend/Zone2_13.png" /> Zone 2'
+                title: '<img src="styles/legend/Zone2_13.png" /> Zone 2 <br><b>Gebiete mit Hitzebel. & hoher Bevölkerungsdichte<br>und/oder überdurchschnittlich vielen Senioren (65+)<br>oder Kleinkindern (<3)</b><br><b><u>Zielvorgaben:</b></u><ul><li><b>* </b>Nächtliche Überwärmung verringern durch eine<br>Verringerung der Hitzeentwicklung am Tag<br>(Beschattung, Verdunstung, helle Farben, Entsiegelung)</li><li><b>* </b>Zufuhr kühlerer Luft aus der Umgebung</li><li><b>* </b>Ausgleichsräume schaffen/erhalten<br>(Parks im Nahbereich, Begrünung von Innenhöfen</li></ul>'
             });
 var format_Zone3_14 = new ol.format.GeoJSON();
 var features_Zone3_14 = format_Zone3_14.readFeatures(json_Zone3_14, 
@@ -220,7 +220,7 @@ var lyr_Zone3_14 = new ol.layer.Vector({
                 style: style_Zone3_14,
                 popuplayertitle: 'Zone 3',
                 interactive: false,
-                title: '<img src="styles/legend/Zone3_14.png" /> Zone 3'
+                title: '<img src="styles/legend/Zone3_14.png" /> Zone 3 <br><b>Gebiete zukünftiger Hitzebelastung</b><br><b><u>Zielvorgaben:</b></u><ul><li><b>* </b>Die Anpassungsmaßnahmen der Zonen 1 & 2<br>sollten auch im Bereich der Zone 3 zur Anwendung kommen</li><li><b>* </b>Freiflächen möglichst nicht oder nur klimasensibel<br>zur Innenverdichtung heranziehen</li></ul>'
             });
 var format_Zone4_15 = new ol.format.GeoJSON();
 var features_Zone4_15 = format_Zone4_15.readFeatures(json_Zone4_15, 
@@ -235,7 +235,7 @@ var lyr_Zone4_15 = new ol.layer.Vector({
                 style: style_Zone4_15,
                 popuplayertitle: 'Zone 4',
                 interactive: false,
-                title: '<img src="styles/legend/Zone4_15.png" /> Zone 4'
+                title: '<img src="styles/legend/Zone4_15.png" /> Zone 4 <br><b>Gebiete stadtklimarelevanter Grün- und Freiflächen</b><br><b><u>Zielvorgaben:</b></u><ul><li><b>* </b>Flächen erhalten, untereinander vernetzen</li><li><b>* </b>Parkartige Strukturen erhalten / verbessern</li><li><b>* </b>Straßenbegleitgrün erhalten</li><li><b>* </b>Keine großflächigen Aufforstungen auf<br>Kaltluftbildungs- und Kaltluftabflussflächen</li></ul>'
             });
 var format_Zone5Kaltluftleitbahnen_16 = new ol.format.GeoJSON();
 var features_Zone5Kaltluftleitbahnen_16 = format_Zone5Kaltluftleitbahnen_16.readFeatures(json_Zone5Kaltluftleitbahnen_16, 
@@ -250,7 +250,7 @@ var lyr_Zone5Kaltluftleitbahnen_16 = new ol.layer.Vector({
                 style: style_Zone5Kaltluftleitbahnen_16,
                 popuplayertitle: 'Zone 5: Kaltluftleitbahnen',
                 interactive: false,
-                title: '<img src="styles/legend/Zone5Kaltluftleitbahnen_16.png" /> Zone 5: Kaltluftleitbahnen'
+                title: '<img src="styles/legend/Zone5Kaltluftleitbahnen_16.png" /> Zone 5: Kaltluftleitbahnen<br><b>Gebiete der Luftleitbahnen</b><br><b><u>Zielvorgaben:</b></u><ul><li><b>* </b>Keine weitere Bautätigkeit</li><li><b>* </b>Keine zusätzlichen Emittenten,<br>Minimierung & Optimierung durch neue Technologien</li><li><b>* </b>Keine Riegelwirkung durch randliche Bebauung</li><li><b>* </b>Strömungshindernisse im Bereich der Leitbahnen vermeiden<br>Hohe, dichte Vegetation, Aufforstungen</li><li><b>* </b>Übergangsbereiche zwischen Leitbahnen & Bebauung<br>offen gestalten (Förderung des Luftaustauschs)</li></ul>'
             });
 var format_Zone5Kaltluftabfluss_17 = new ol.format.GeoJSON();
 var features_Zone5Kaltluftabfluss_17 = format_Zone5Kaltluftabfluss_17.readFeatures(json_Zone5Kaltluftabfluss_17, 
@@ -265,7 +265,7 @@ var lyr_Zone5Kaltluftabfluss_17 = new ol.layer.Vector({
                 style: style_Zone5Kaltluftabfluss_17,
                 popuplayertitle: 'Zone 5: Kaltluftabfluss',
                 interactive: false,
-                title: '<img src="styles/legend/Zone5Kaltluftabfluss_17.png" /> Zone 5: Kaltluftabfluss'
+                title: '<img src="styles/legend/Zone5Kaltluftabfluss_17.png" /> Zone 5: Kaltluftabfluss<br><b>Richtung und Größe der Luftleitbahnen</b>'
             });
 var group_HandlungskarteHidS = new ol.layer.Group({
                                 layers: [lyr_Zone1_12,lyr_Zone2_13,lyr_Zone3_14,lyr_Zone4_15,lyr_Zone5Kaltluftleitbahnen_16,lyr_Zone5Kaltluftabfluss_17,],
