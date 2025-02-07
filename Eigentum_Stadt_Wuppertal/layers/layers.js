@@ -91,18 +91,18 @@ var group_Stadtgebiet = new ol.layer.Group({
 
 lyr_Gmaps_0.setVisible(false);lyr_OSM_1.setVisible(true);lyr_Quartiere_2.setVisible(true);lyr_Bezirke_3.setVisible(true);lyr_Stadtgebiet_4.setVisible(true);lyr_FlchenimEigentumderStadtWuppertal_5.setVisible(true);
 var layersList = [lyr_Gmaps_0,lyr_OSM_1,group_Stadtgebiet,lyr_FlchenimEigentumderStadtWuppertal_5];
-lyr_Quartiere_2.set('fieldAliases', {'fid': 'fid', 'QUARTIER': 'QUARTIER', 'NAME': 'NAME', 'FLAECHE': 'FLAECHE', 'Fläche': 'Fläche', });
-lyr_Bezirke_3.set('fieldAliases', {'fid': 'fid', 'BEZIRK': 'BEZIRK', 'NAME': 'NAME', 'FLAECHE': 'FLAECHE', 'Fläche': 'Fläche', });
-lyr_Stadtgebiet_4.set('fieldAliases', {'fid': 'fid', 'STADT': 'STADT', 'FLAECHE': 'Fläche', 'Fläche2': 'Fläche2', });
-lyr_FlchenimEigentumderStadtWuppertal_5.set('fieldAliases', {'GEM': 'GEM', 'FLUR': 'FLUR', 'FLURSTZ': 'FLURSTZ', 'FLURSTN': 'FLURSTN', });
-lyr_Quartiere_2.set('fieldImages', {'fid': 'TextEdit', 'QUARTIER': 'TextEdit', 'NAME': 'TextEdit', 'FLAECHE': 'Hidden', 'Fläche': 'TextEdit', });
-lyr_Bezirke_3.set('fieldImages', {'fid': 'TextEdit', 'BEZIRK': 'TextEdit', 'NAME': 'TextEdit', 'FLAECHE': 'Hidden', 'Fläche': 'TextEdit', });
-lyr_Stadtgebiet_4.set('fieldImages', {'fid': 'TextEdit', 'STADT': 'TextEdit', 'FLAECHE': 'Hidden', 'Fläche2': 'TextEdit', });
-lyr_FlchenimEigentumderStadtWuppertal_5.set('fieldImages', {'GEM': 'TextEdit', 'FLUR': 'TextEdit', 'FLURSTZ': 'TextEdit', 'FLURSTN': 'TextEdit', });
+lyr_Quartiere_2.set('fieldAliases', {'fid': 'fid', 'QUARTIER': 'QUARTIER', 'NAME': 'NAME', 'FLAECHE': 'FLAECHE', 'Fläche': 'Fläche (km²)', });
+lyr_Bezirke_3.set('fieldAliases', {'fid': 'fid', 'BEZIRK': 'BEZIRK', 'NAME': 'NAME', 'FLAECHE': 'FLAECHE', 'Fläche': 'Fläche (km²)', });
+lyr_Stadtgebiet_4.set('fieldAliases', {'fid': 'fid', 'STADT': 'STADT', 'FLAECHE': 'Fläche', 'Fläche2': 'Fläche (km²)', });
+lyr_FlchenimEigentumderStadtWuppertal_5.set('fieldAliases', {'fid': 'fid', 'GEM': 'GEM', 'FLUR': 'FLUR', 'FLURSTZ': 'FLURSTZ', 'FLURSTN': 'FLURSTN', 'Fläche': 'Fläche (m²)', });
+lyr_Quartiere_2.set('fieldImages', {'fid': 'Hidden', 'QUARTIER': 'TextEdit', 'NAME': 'TextEdit', 'FLAECHE': 'Hidden', 'Fläche': 'TextEdit', });
+lyr_Bezirke_3.set('fieldImages', {'fid': 'Hidden', 'BEZIRK': 'TextEdit', 'NAME': 'TextEdit', 'FLAECHE': 'Hidden', 'Fläche': 'TextEdit', });
+lyr_Stadtgebiet_4.set('fieldImages', {'fid': 'Hidden', 'STADT': 'TextEdit', 'FLAECHE': 'Hidden', 'Fläche2': 'TextEdit', });
+lyr_FlchenimEigentumderStadtWuppertal_5.set('fieldImages', {'fid': 'Hidden', 'GEM': 'TextEdit', 'FLUR': 'TextEdit', 'FLURSTZ': 'TextEdit', 'FLURSTN': 'TextEdit', 'Fläche': 'TextEdit', });
 lyr_Quartiere_2.set('fieldLabels', {'fid': 'inline label - visible with data', 'QUARTIER': 'inline label - visible with data', 'NAME': 'inline label - visible with data', 'Fläche': 'inline label - visible with data', });
 lyr_Bezirke_3.set('fieldLabels', {'fid': 'inline label - visible with data', 'BEZIRK': 'inline label - visible with data', 'NAME': 'inline label - visible with data', 'Fläche': 'inline label - visible with data', });
 lyr_Stadtgebiet_4.set('fieldLabels', {'fid': 'inline label - visible with data', 'STADT': 'inline label - visible with data', 'Fläche2': 'inline label - visible with data', });
-lyr_FlchenimEigentumderStadtWuppertal_5.set('fieldLabels', {'GEM': 'inline label - visible with data', 'FLUR': 'inline label - visible with data', 'FLURSTZ': 'inline label - visible with data', 'FLURSTN': 'inline label - visible with data', });
+lyr_FlchenimEigentumderStadtWuppertal_5.set('fieldLabels', {'GEM': 'inline label - visible with data', 'FLUR': 'inline label - visible with data', 'FLURSTZ': 'inline label - visible with data', 'FLURSTN': 'inline label - visible with data', 'Fläche': 'inline label - visible with data', });
 lyr_FlchenimEigentumderStadtWuppertal_5.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });

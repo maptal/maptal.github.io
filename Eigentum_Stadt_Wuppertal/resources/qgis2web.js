@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([772784.952518, 6650582.420130, 823889.688300, 6680081.664068], map.getSize());
+map.getView().fit([775540.613044, 6649985.687500, 819389.511956, 6678432.812500], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -451,7 +451,7 @@ var Abstract = new ol.control.Control({
 
         var linkElement = document.createElement('a');
 
-        if (531 > 240) {
+        if (771 > 240) {
             linkElement.setAttribute("onmouseenter", "showAbstract()");
             linkElement.setAttribute("onmouseleave", "hideAbstract()");
             linkElement.innerHTML = 'i';
@@ -465,13 +465,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = '<b>Flächen im Eigentum der Stadt Wuppertal</b><br /><p>Die Karte <b>kann</b> (muss aber nicht) mit GPS genutzt werden, um die Informationen vor Ort abzurufen.<br /><p><b>Klick</b> auf die jeweiligen Flächen gibt weitere Infos.<br /><p>Die Suche (Fernglas) erlaubt die Suche nach Adressen.<br /><p>Die zugrunde liegenden GIS-Daten gibt es <a href="https://fragdenstaat.de/a/314782" target="_blank">hier</a><br /><p>Letztes Update: 06.02.25<br /><p>(c) <a href="http://menschenfreunde-scharpenacken.de" target="_blank">Menschen- und Natutfreunde Scharpenacken</a>';
+                linkElement.innerHTML = '<b>Flächen im Eigentum der Stadt Wuppertal</b><br /><p>Die Karte <b>kann</b> (muss aber nicht) mit GPS genutzt werden, um die Informationen vor Ort abzurufen.<br /><p><b>Klick</b> auf die jeweiligen Flächen gibt weitere Infos.<br /><p>Die Suche (Fernglas) erlaubt die Suche nach Adressen.<br /><p> Die Gesamtfläche Wuppertals beträgt übrigens <b>168,4 km²</b> bzw. <b>16.840 ha</b>. Im städtischen Eigentum befinden sich <b>41,2 km²</b> bzw. <b>4.120 ha</b>. Die größte städtische Fläche liegt im Kothen und ist <b>32,78 ha</b> groß.<br /><p>Die zugrunde liegenden GIS-Daten gibt es <a href="https://fragdenstaat.de/a/314782" target="_blank">hier</a><br /><p>Letztes Update: 06.02.25<br /><p>(c) <a href="http://menschenfreunde-scharpenacken.de" target="_blank">Menschen- und Natutfreunde Scharpenacken</a>';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = '<b>Flächen im Eigentum der Stadt Wuppertal</b><br /><p>Die Karte <b>kann</b> (muss aber nicht) mit GPS genutzt werden, um die Informationen vor Ort abzurufen.<br /><p><b>Klick</b> auf die jeweiligen Flächen gibt weitere Infos.<br /><p>Die Suche (Fernglas) erlaubt die Suche nach Adressen.<br /><p>Die zugrunde liegenden GIS-Daten gibt es <a href="https://fragdenstaat.de/a/314782" target="_blank">hier</a><br /><p>Letztes Update: 06.02.25<br /><p>(c) <a href="http://menschenfreunde-scharpenacken.de" target="_blank">Menschen- und Natutfreunde Scharpenacken</a>';
+            linkElement.innerHTML = '<b>Flächen im Eigentum der Stadt Wuppertal</b><br /><p>Die Karte <b>kann</b> (muss aber nicht) mit GPS genutzt werden, um die Informationen vor Ort abzurufen.<br /><p><b>Klick</b> auf die jeweiligen Flächen gibt weitere Infos.<br /><p>Die Suche (Fernglas) erlaubt die Suche nach Adressen.<br /><p> Die Gesamtfläche Wuppertals beträgt übrigens <b>168,4 km²</b> bzw. <b>16.840 ha</b>. Im städtischen Eigentum befinden sich <b>41,2 km²</b> bzw. <b>4.120 ha</b>. Die größte städtische Fläche liegt im Kothen und ist <b>32,78 ha</b> groß.<br /><p>Die zugrunde liegenden GIS-Daten gibt es <a href="https://fragdenstaat.de/a/314782" target="_blank">hier</a><br /><p>Letztes Update: 06.02.25<br /><p>(c) <a href="http://menschenfreunde-scharpenacken.de" target="_blank">Menschen- und Natutfreunde Scharpenacken</a>';
         }
 
         titleElement.appendChild(linkElement);
