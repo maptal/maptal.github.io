@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title>Tour de Natur</title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/ol-geocoder.js"></script>
+        <script src="layers/Stadtgebiet_EPSG3857_SHAPEshp_3.js"></script><script src="layers/Stadtbezirke_EPSG3857_SHAPEshp_4.js"></script><script src="layers/DornerWeg_5.js"></script><script src="layers/LichtscheidSd_6.js"></script><script src="layers/SchllerWest_7.js"></script><script src="layers/Scniedestr_8.js"></script><script src="layers/SonnenHgelKlimapfad_derKlasse9bderHauptschuleHgelstrae_9.js"></script><script src="layers/KlimarouteWuppertalSd_10.js"></script><script src="layers/Treppenlauf_11.js"></script><script src="layers/KlimarouteGelpetal_12.js"></script><script src="layers/KulinarischeFahrrad_Einkaufstour_13.js"></script><script src="layers/KlimarouteBeyenburg_14.js"></script><script src="layers/KlimaroutezumBotanischenGarten_15.js"></script><script src="layers/KlimawalkKunstKulturElberfeldI_16.js"></script><script src="layers/KlimawalkKunstKulturBarmen_17.js"></script><script src="layers/KlimawalkKunstKulturElberfeldII_18.js"></script><script src="layers/Klimaorte_19.js"></script><script src="layers/BikeRide_20.js"></script><script src="layers/LadestationenEBikes_21.js"></script><script src="layers/RadverkehrsnetzbeleuchteteStrecken_22.js"></script><script src="layers/RadverkehrsnetzSteigungen_23.js"></script><script src="layers/RadwegemarkanteBauwerke_24.js"></script><script src="layers/ZugaengeBahntrassenradwegePunkte_25.js"></script><script src="layers/ZugaengeBahntrassenradwege_26.js"></script><script src="layers/Radrouten_27.js"></script><script src="layers/POIFlchen_30.js"></script><script src="layers/POI_31.js"></script>
+        <script src="styles/Stadtgebiet_EPSG3857_SHAPEshp_3_style.js"></script><script src="styles/Stadtbezirke_EPSG3857_SHAPEshp_4_style.js"></script><script src="styles/DornerWeg_5_style.js"></script><script src="styles/LichtscheidSd_6_style.js"></script><script src="styles/SchllerWest_7_style.js"></script><script src="styles/Scniedestr_8_style.js"></script><script src="styles/SonnenHgelKlimapfad_derKlasse9bderHauptschuleHgelstrae_9_style.js"></script><script src="styles/KlimarouteWuppertalSd_10_style.js"></script><script src="styles/Treppenlauf_11_style.js"></script><script src="styles/KlimarouteGelpetal_12_style.js"></script><script src="styles/KulinarischeFahrrad_Einkaufstour_13_style.js"></script><script src="styles/KlimarouteBeyenburg_14_style.js"></script><script src="styles/KlimaroutezumBotanischenGarten_15_style.js"></script><script src="styles/KlimawalkKunstKulturElberfeldI_16_style.js"></script><script src="styles/KlimawalkKunstKulturBarmen_17_style.js"></script><script src="styles/KlimawalkKunstKulturElberfeldII_18_style.js"></script><script src="styles/Klimaorte_19_style.js"></script><script src="styles/BikeRide_20_style.js"></script><script src="styles/LadestationenEBikes_21_style.js"></script><script src="styles/RadverkehrsnetzbeleuchteteStrecken_22_style.js"></script><script src="styles/RadverkehrsnetzSteigungen_23_style.js"></script><script src="styles/RadwegemarkanteBauwerke_24_style.js"></script><script src="styles/ZugaengeBahntrassenradwegePunkte_25_style.js"></script><script src="styles/ZugaengeBahntrassenradwege_26_style.js"></script><script src="styles/Radrouten_27_style.js"></script><script src="styles/POIFlchen_30_style.js"></script><script src="styles/POI_31_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
