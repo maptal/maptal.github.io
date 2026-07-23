@@ -6,6 +6,7 @@
 
 | Karte | Link |Beschreibung|
 |-----|---------------|---|
+|     ![CO2-Pipeline](/docs/co2.jpg)|[CO2-Pipeline](https://maptal.github.io/CO2-Pipeline/)|Untersuchungsraum CO2-Pipeline|
 |     ![Siedlungsflächenmonitoring](/docs/SFM.jpg)|[Siedlungsflächenmonitoring](https://maptal.github.io/SFM/)|Siedlungsflächenmonitoring Planungsregion Düsseldorf|
 |     ![Tour de Natur](/docs/TdN.jpg)|[Tour de Natur](https://maptal.github.io/tourdenatur/)|Infokarte TdN 2025|
 |     ![Klima Wuppertal](/docs/Klima_Wuppertal.jpg)|[Klima Wuppertal](https://maptal.github.io/Klima_Wuppertal/)|Klimadaten "Hitze in der Stadt"|
