@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_KompensatationnachArt_14 = function(feature, resolution){
+var style_KompensatationnachArt_15 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -23,16 +23,16 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
         labelText = String("");
     }
     
-        function rules_KompensatationnachArt_14(feature, value) {
+        function rules_KompensatationnachArt_15(feature, value) {
             var context = {
                 feature: feature,
                 variables: {}
             };
             // Start of if blocks and style check logic
-            if (exp_KompensatationnachArt_14rule0_eval_expression(context)) {
+            if (exp_KompensatationnachArt_15rule0_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -43,10 +43,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule1_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule1_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -57,10 +57,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule2_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule2_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -71,10 +71,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule3_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule3_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -85,10 +85,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule4_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule4_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -99,10 +99,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule5_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule5_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -113,10 +113,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule6_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule6_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -127,10 +127,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule7_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule7_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -141,10 +141,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule8_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule8_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -155,10 +155,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule9_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule9_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -169,10 +169,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule10_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule10_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -183,10 +183,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule11_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule11_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -197,10 +197,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule12_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule12_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -211,10 +211,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule13_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule13_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -225,10 +225,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule14_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule14_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -239,10 +239,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule15_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule15_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -253,10 +253,10 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
                     }
-                    else if (exp_KompensatationnachArt_14rule16_eval_expression(context)) {
+                    else if (exp_KompensatationnachArt_15rule16_eval_expression(context)) {
                       return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -270,7 +270,7 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
             else {
                 return [ new ol.style.Style({
         
-        fill: fill_KompensatationnachArt_14,
+        fill: fill_KompensatationnachArt_15,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -282,7 +282,7 @@ var style_KompensatationnachArt_14 = function(feature, resolution){
     })];
             }
         }
-        var style = rules_KompensatationnachArt_14(feature, value);
+        var style = rules_KompensatationnachArt_15(feature, value);
         ;
 
     return style;

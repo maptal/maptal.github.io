@@ -766,7 +766,7 @@ function fnc_project_color(values, context) {
 
 
 
-function exp_KompensatationnachArt_14rule0_eval_expression(context) {
+function exp_KompensatationnachArt_15rule0_eval_expression(context) {
     // ziel1 LIKE '%Artenschutz%'
 
     var feature = context.feature;
@@ -779,7 +779,7 @@ function exp_KompensatationnachArt_14rule0_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule1_eval_expression(context) {
+function exp_KompensatationnachArt_15rule1_eval_expression(context) {
     // ziel1 LIKE '%Brache%'
 
     var feature = context.feature;
@@ -792,7 +792,7 @@ function exp_KompensatationnachArt_14rule1_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule2_eval_expression(context) {
+function exp_KompensatationnachArt_15rule2_eval_expression(context) {
     // ziel1 LIKE '%Saum%'
 
     var feature = context.feature;
@@ -805,7 +805,7 @@ function exp_KompensatationnachArt_14rule2_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule3_eval_expression(context) {
+function exp_KompensatationnachArt_15rule3_eval_expression(context) {
     // ziel1 LIKE '%Feuchtbrache%'
 
     var feature = context.feature;
@@ -818,7 +818,7 @@ function exp_KompensatationnachArt_14rule3_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule4_eval_expression(context) {
+function exp_KompensatationnachArt_15rule4_eval_expression(context) {
     // ziel1 LIKE '%Feuchtwie%'
 
     var feature = context.feature;
@@ -831,7 +831,7 @@ function exp_KompensatationnachArt_14rule4_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule5_eval_expression(context) {
+function exp_KompensatationnachArt_15rule5_eval_expression(context) {
     // ziel1 LIKE '%Gewäss%'
 
     var feature = context.feature;
@@ -844,7 +844,7 @@ function exp_KompensatationnachArt_14rule5_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule6_eval_expression(context) {
+function exp_KompensatationnachArt_15rule6_eval_expression(context) {
     // ziel1 LIKE '%Grünland Extensivnutzung Weide%'
 
     var feature = context.feature;
@@ -857,7 +857,7 @@ function exp_KompensatationnachArt_14rule6_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule7_eval_expression(context) {
+function exp_KompensatationnachArt_15rule7_eval_expression(context) {
     // ziel1 LIKE '%Grünland Extensivnutzung Wiese%'
 
     var feature = context.feature;
@@ -870,7 +870,7 @@ function exp_KompensatationnachArt_14rule7_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule8_eval_expression(context) {
+function exp_KompensatationnachArt_15rule8_eval_expression(context) {
     // ziel1 LIKE '%Grünland Extensivnutzung:%'
 
     var feature = context.feature;
@@ -883,7 +883,7 @@ function exp_KompensatationnachArt_14rule8_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule9_eval_expression(context) {
+function exp_KompensatationnachArt_15rule9_eval_expression(context) {
     // ziel1 LIKE '%Hecke%'
 
     var feature = context.feature;
@@ -896,7 +896,7 @@ function exp_KompensatationnachArt_14rule9_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule10_eval_expression(context) {
+function exp_KompensatationnachArt_15rule10_eval_expression(context) {
     // ziel1 LIKE '%Kleingehölz%'
 
     var feature = context.feature;
@@ -909,7 +909,7 @@ function exp_KompensatationnachArt_14rule10_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule11_eval_expression(context) {
+function exp_KompensatationnachArt_15rule11_eval_expression(context) {
     // ziel1 LIKE '%Feuchtbiot%'
 
     var feature = context.feature;
@@ -922,7 +922,7 @@ function exp_KompensatationnachArt_14rule11_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule12_eval_expression(context) {
+function exp_KompensatationnachArt_15rule12_eval_expression(context) {
     // ziel1 LIKE '%Obstwiese%'
 
     var feature = context.feature;
@@ -935,7 +935,7 @@ function exp_KompensatationnachArt_14rule12_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule13_eval_expression(context) {
+function exp_KompensatationnachArt_15rule13_eval_expression(context) {
     // ziel1 LIKE '%Sonderbiotop%'
 
     var feature = context.feature;
@@ -948,7 +948,7 @@ function exp_KompensatationnachArt_14rule13_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule14_eval_expression(context) {
+function exp_KompensatationnachArt_15rule14_eval_expression(context) {
     // ziel1 LIKE '%Uferrandstr%'
 
     var feature = context.feature;
@@ -961,7 +961,7 @@ function exp_KompensatationnachArt_14rule14_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule15_eval_expression(context) {
+function exp_KompensatationnachArt_15rule15_eval_expression(context) {
     // ziel1 LIKE '%Laubwald%'
 
     var feature = context.feature;
@@ -974,7 +974,7 @@ function exp_KompensatationnachArt_14rule15_eval_expression(context) {
 }
 
 
-function exp_KompensatationnachArt_14rule16_eval_expression(context) {
+function exp_KompensatationnachArt_15rule16_eval_expression(context) {
     // ziel1 LIKE '%Waldsaum%'
 
     var feature = context.feature;
@@ -983,5 +983,18 @@ function exp_KompensatationnachArt_14rule16_eval_expression(context) {
         return (feature.get('ziel1').indexOf('Waldsaum') > -1);
     } else {
         return (feature.get('ziel1').indexOf('Waldsaum') > -1);
+    }
+}
+
+
+function exp_label_Seilbahn_44_eval_expression(context) {
+    // Bezeichnung || ', max. Höhe: ' || GH || 'm NHN'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (((feature.get('Bezeichnung')  + ', max. Höhe: ') + feature.get('GH') ) + 'm NHN');
+    } else {
+        return (((feature.get('Bezeichnung')  + ', max. Höhe: ') + feature.get('GH') ) + 'm NHN');
     }
 }
