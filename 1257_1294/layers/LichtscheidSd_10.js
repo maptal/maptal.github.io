@@ -1,0 +1,1 @@
+var json_LichtscheidSd_10 = {"type":"FeatureCollection","name":"LichtscheidSd_10","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":null,"Name":"Lichtscheid-Süd"},"geometry":{"type":"Point","coordinates":[7.2,51.2]}}]}

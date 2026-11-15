@@ -1,0 +1,1 @@
+var json_DornerWeg_9 = {"type":"FeatureCollection","name":"DornerWeg_9","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":null,"Nsme":"Dorner Weg"},"geometry":{"type":"Point","coordinates":[7.2,51.2]}}]}

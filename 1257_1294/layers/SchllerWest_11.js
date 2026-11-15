@@ -1,0 +1,1 @@
+var json_SchllerWest_11 = {"type":"FeatureCollection","name":"SchllerWest_11","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Name":"Schöller West"},"geometry":{"type":"Point","coordinates":[7.0,51.2]}}]}

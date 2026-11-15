@@ -1,0 +1,1 @@
+var json_HerausnahmeLSGLSV1975_26 = {"type":"FeatureCollection","name":"HerausnahmeLSGLSV1975_26","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"fid":"1","Beschreibung":"Bereich der Teilaufhebung des Landschaftsschutzes"},"geometry":{"type":"Point","coordinates":[7.1,51.3]}}]}
