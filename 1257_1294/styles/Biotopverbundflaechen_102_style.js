@@ -1,6 +1,6 @@
 var size = 0;
 var placement = 'point';
-function categories_Biotopverbundflaechen_103(feature, value, size, resolution, labelText,
+function categories_Biotopverbundflaechen_102(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement, textAlign, offsetX, offsetY, overflow, repeat) {
     var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
@@ -8,7 +8,7 @@ function categories_Biotopverbundflaechen_103(feature, value, size, resolution, 
         case 'besondere Bedeutung':
             return [ new ol.style.Style({
         
-        fill: fill_Biotopverbundflaechen_103,
+        fill: fill_Biotopverbundflaechen_102,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -23,7 +23,7 @@ function categories_Biotopverbundflaechen_103(feature, value, size, resolution, 
         case 'herausragende Bedeutung':
             return [ new ol.style.Style({
         
-        fill: fill_Biotopverbundflaechen_103,
+        fill: fill_Biotopverbundflaechen_102,
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -36,7 +36,7 @@ function categories_Biotopverbundflaechen_103(feature, value, size, resolution, 
 			break;
     }};
 
-var style_Biotopverbundflaechen_103 = function(feature, resolution){
+var style_Biotopverbundflaechen_102 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -58,7 +58,7 @@ var style_Biotopverbundflaechen_103 = function(feature, resolution){
         labelText = String("");
     }
     
-    var style = categories_Biotopverbundflaechen_103(feature, value, size, resolution, labelText,
+    var style = categories_Biotopverbundflaechen_102(feature, value, size, resolution, labelText,
                           labelFont, labelFill, bufferColor,
                           bufferWidth, placement, textAlign, offsetX, offsetY, overflow, repeat);
 

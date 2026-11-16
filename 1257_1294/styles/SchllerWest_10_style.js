@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Seilbahn_43 = function(feature, resolution){
+var style_SchllerWest_10 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -9,7 +9,7 @@ var style_Seilbahn_43 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "10.4px \'Open Sans\', sans-serif";
+    var labelFont = "18.2px \'Open Sans\', sans-serif";
     var labelFill = "#323232";
     var bufferColor = "";
     var bufferWidth = 0;
@@ -19,17 +19,11 @@ var style_Seilbahn_43 = function(feature, resolution){
     var overflow = false;
     var repeat = 0;
     var placement = 'point';
-    if (exp_label_Seilbahn_43_eval_expression(context) !== null) {
-        labelText = String(exp_label_Seilbahn_43_eval_expression(context));
+    if (feature.get("Name") !== null) {
+        labelText = String(feature.get("Name"));
     }
     var style = [ new ol.style.Style({
-        
-        fill: fill_Seilbahn_43,
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
-    }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(99,153,82,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.8}),
+        stroke: new ol.style.Stroke({color: 'rgba(128,14,16,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(228,26,28,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)

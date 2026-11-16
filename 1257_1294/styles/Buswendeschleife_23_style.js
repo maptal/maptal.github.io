@@ -1,6 +1,6 @@
 var size = 0;
 var placement = 'point';
-function categories_Buswendeschleife_24(feature, value, size, resolution, labelText,
+function categories_Buswendeschleife_23(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement, textAlign, offsetX, offsetY, overflow, repeat) {
     var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
@@ -42,7 +42,7 @@ function categories_Buswendeschleife_24(feature, value, size, resolution, labelT
 			break;
     }};
 
-var style_Buswendeschleife_24 = function(feature, resolution){
+var style_Buswendeschleife_23 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -64,7 +64,7 @@ var style_Buswendeschleife_24 = function(feature, resolution){
         labelText = String(feature.get("Bezeichnung"));
     }
     
-    var style = categories_Buswendeschleife_24(feature, value, size, resolution, labelText,
+    var style = categories_Buswendeschleife_23(feature, value, size, resolution, labelText,
                           labelFont, labelFill, bufferColor,
                           bufferWidth, placement, textAlign, offsetX, offsetY, overflow, repeat);
 
