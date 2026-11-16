@@ -1,6 +1,6 @@
 var size = 0;
 var placement = 'point';
-function categories_Buswendeschleife_23(feature, value, size, resolution, labelText,
+function categories_WeitereFlchen_22(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement, textAlign, offsetX, offsetY, overflow, repeat) {
     var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
@@ -40,9 +40,33 @@ function categories_Buswendeschleife_23(feature, value, size, resolution, labelT
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
 			break;
+
+        case 'Sondergebiet Hängebrücke':
+            return [ new ol.style.Style({
+        
+        fill: fill_WeitereFlchen_22,
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
+    }),new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(99,153,82,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.8}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
+    })];
+			break;
+
+        case 'Baufenster':
+            return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(53,121,177,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.6479999999999997}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
+    })];
+			break;
     }};
 
-var style_Buswendeschleife_23 = function(feature, resolution){
+var style_WeitereFlchen_22 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -64,7 +88,7 @@ var style_Buswendeschleife_23 = function(feature, resolution){
         labelText = String(feature.get("Bezeichnung"));
     }
     
-    var style = categories_Buswendeschleife_23(feature, value, size, resolution, labelText,
+    var style = categories_WeitereFlchen_22(feature, value, size, resolution, labelText,
                           labelFont, labelFill, bufferColor,
                           bufferWidth, placement, textAlign, offsetX, offsetY, overflow, repeat);
 

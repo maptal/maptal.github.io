@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_FlurstimEigentumderStadtWuppertal2024_09_02_106 = function(feature, resolution){
+var style_DornerWeg_7 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -9,8 +9,8 @@ var style_FlurstimEigentumderStadtWuppertal2024_09_02_106 = function(feature, re
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "10px, sans-serif";
-    var labelFill = "#000000";
+    var labelFont = "18.2px \'Open Sans\', sans-serif";
+    var labelFill = "#323232";
     var bufferColor = "";
     var bufferWidth = 0;
     var textAlign = 'left';
@@ -19,11 +19,11 @@ var style_FlurstimEigentumderStadtWuppertal2024_09_02_106 = function(feature, re
     var overflow = false;
     var repeat = 0;
     var placement = 'point';
-    if ("" !== null) {
-        labelText = String("");
+    if (feature.get("Nsme") !== null) {
+        labelText = String(feature.get("Nsme"));
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(128,62,0,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(255,127,0,1.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(128,14,16,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(228,26,28,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)

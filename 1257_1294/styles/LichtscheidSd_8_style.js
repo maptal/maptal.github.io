@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_DornerWeg_8 = function(feature, resolution){
+var style_LichtscheidSd_8 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -19,8 +19,8 @@ var style_DornerWeg_8 = function(feature, resolution){
     var overflow = false;
     var repeat = 0;
     var placement = 'point';
-    if (feature.get("Nsme") !== null) {
-        labelText = String(feature.get("Nsme"));
+    if (feature.get("Name") !== null) {
+        labelText = String(feature.get("Name"));
     }
     var style = [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(128,14,16,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(228,26,28,1.0)'}),
