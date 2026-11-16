@@ -1,13 +1,13 @@
 var size = 0;
 var placement = 'point';
-function categories_WeitereFlchen_22(feature, value, size, resolution, labelText,
+function categories_WeitereFlchen_23(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement, textAlign, offsetX, offsetY, overflow, repeat) {
     var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
     switch(valueStr) {
         case 'Buswendeschleife oben':
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(32,207,201,1.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.7)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(32,207,201,0.7)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -16,7 +16,7 @@ function categories_WeitereFlchen_22(feature, value, size, resolution, labelText
 
         case 'Buswendeschleife unten':
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(32,207,201,1.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.7)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(32,207,201,0.7)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -25,7 +25,7 @@ function categories_WeitereFlchen_22(feature, value, size, resolution, labelText
 
         case 'Eingangsbereich':
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(250,0,255,1.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.7)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(250,0,255,0.7)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -34,7 +34,7 @@ function categories_WeitereFlchen_22(feature, value, size, resolution, labelText
 
         case 'Stützmauer':
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(0,0,0,1.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.7)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(0,0,0,0.7)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -43,13 +43,7 @@ function categories_WeitereFlchen_22(feature, value, size, resolution, labelText
 
         case 'Sondergebiet Hängebrücke':
             return [ new ol.style.Style({
-        
-        fill: fill_WeitereFlchen_22,
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
-    }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(99,153,82,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.8}),
+        stroke: new ol.style.Stroke({color: 'rgba(128,62,0,0.7)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(255,127,0,0.7)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -58,7 +52,7 @@ function categories_WeitereFlchen_22(feature, value, size, resolution, labelText
 
         case 'Baufenster':
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(53,121,177,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.6479999999999997}),
+        stroke: new ol.style.Stroke({color: 'rgba(53,121,177,0.7)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.6479999999999997}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -66,7 +60,7 @@ function categories_WeitereFlchen_22(feature, value, size, resolution, labelText
 			break;
     }};
 
-var style_WeitereFlchen_22 = function(feature, resolution){
+var style_WeitereFlchen_23 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -88,7 +82,7 @@ var style_WeitereFlchen_22 = function(feature, resolution){
         labelText = String(feature.get("Bezeichnung"));
     }
     
-    var style = categories_WeitereFlchen_22(feature, value, size, resolution, labelText,
+    var style = categories_WeitereFlchen_23(feature, value, size, resolution, labelText,
                           labelFont, labelFill, bufferColor,
                           bufferWidth, placement, textAlign, offsetX, offsetY, overflow, repeat);
 

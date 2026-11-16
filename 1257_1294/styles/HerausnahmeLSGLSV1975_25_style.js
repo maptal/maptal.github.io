@@ -1,34 +1,31 @@
 var size = 0;
 var placement = 'point';
-function categories_Biotopverbundflaechen_101(feature, value, size, resolution, labelText,
+function categories_HerausnahmeLSGLSV1975_25(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement, textAlign, offsetX, offsetY, overflow, repeat) {
     var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
     switch(valueStr) {
-        case 'besondere Bedeutung':
+        case 'Fahrradstellplätze':
             return [ new ol.style.Style({
-        
-        fill: fill_Biotopverbundflaechen_101,
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
-    }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(77,175,74,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1.748}),
+        stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.7)', lineDash: [13.299999999999999,2.6599999999999997], lineCap: 'butt', lineJoin: 'miter', width: 2.6599999999999997}),fill: new ol.style.Fill({color: 'rgba(255,240,105,0.7)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
 			break;
 
-        case 'herausragende Bedeutung':
+        case 'Teilaufhebung des Landschaftsschutzes':
             return [ new ol.style.Style({
-        
-        fill: fill_Biotopverbundflaechen_101,
+        stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.7)', lineDash: [13.299999999999999,2.6599999999999997], lineCap: 'butt', lineJoin: 'miter', width: 2.6599999999999997}),fill: new ol.style.Fill({color: 'rgba(255,127,0,0.7)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
-    }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(228,26,28,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1.748}),
+    })];
+			break;
+
+        case 'Toiletten':
+            return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.7)', lineDash: [13.299999999999999,2.6599999999999997], lineCap: 'butt', lineJoin: 'miter', width: 2.6599999999999997}),fill: new ol.style.Fill({color: 'rgba(255,82,82,0.7)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -36,15 +33,15 @@ function categories_Biotopverbundflaechen_101(feature, value, size, resolution, 
 			break;
     }};
 
-var style_Biotopverbundflaechen_101 = function(feature, resolution){
+var style_HerausnahmeLSGLSV1975_25 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
     };
     
     var labelText = ""; 
-    var value = feature.get("BEDEUTUNG1");
-    var labelFont = "10px, sans-serif";
+    var value = feature.get("Beschreibung");
+    var labelFont = "13.0px \'Open Sans\', sans-serif";
     var labelFill = "#000000";
     var bufferColor = "";
     var bufferWidth = 0;
@@ -54,11 +51,11 @@ var style_Biotopverbundflaechen_101 = function(feature, resolution){
     var overflow = false;
     var repeat = 0;
     var placement = 'point';
-    if ("" !== null) {
-        labelText = String("");
+    if (feature.get("Beschreibung") !== null) {
+        labelText = String(feature.get("Beschreibung"));
     }
     
-    var style = categories_Biotopverbundflaechen_101(feature, value, size, resolution, labelText,
+    var style = categories_HerausnahmeLSGLSV1975_25(feature, value, size, resolution, labelText,
                           labelFont, labelFill, bufferColor,
                           bufferWidth, placement, textAlign, offsetX, offsetY, overflow, repeat);
 

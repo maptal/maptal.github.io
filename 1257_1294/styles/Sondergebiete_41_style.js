@@ -4,24 +4,18 @@ function categories_Sondergebiete_41(feature, value, size, resolution, labelText
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement, textAlign, offsetX, offsetY, overflow, repeat) {
     var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
-    switch(valueStr) {default:
+    switch(valueStr) {
+        case 'Baufenster':
             return [ new ol.style.Style({
-        
-        fill: fill_Sondergebiete_41,
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
-    }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(99,153,82,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.8}),
+        stroke: new ol.style.Stroke({color: 'rgba(53,121,177,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.6479999999999997}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
 			break;
-
-        case 'Baufenster':
+default:
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(53,121,177,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.6479999999999997}),
+        stroke: new ol.style.Stroke({color: 'rgba(128,62,0,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(255,127,0,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
